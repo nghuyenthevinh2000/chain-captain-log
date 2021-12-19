@@ -1,5 +1,8 @@
 # Dig Mainnet Captain Log
 
+1. source code repo: https://github.com/notional-labs/dig
+2. website: https://digchain.org
+
 ## I. Captain Log 1: Experience on the first day of post dig main-net.
 1. Get Wallet and Explorer up and running in test-net, not main-net.
 2. Super careful with setting coin distribution (related to genesis.json)
