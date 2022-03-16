@@ -1,5 +1,5 @@
 # Chain Captain Log
-this is my experience and view on chain launch
+this is my experience and view on building a chain
 
 # Util folder is for useful experience
 
