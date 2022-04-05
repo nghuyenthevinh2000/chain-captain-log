@@ -15,7 +15,79 @@ Everything else inside module will based on these messages.
 
 A worse scenario would be building module first before building Msg proto. After that, if message is incorrect, one will have to build proto again and all module code structure that depends on that incorrect Msg.
 
-3. __Second thing to build: function logic in keeper package__
+3. __Second thing to register: message codec (compressor/decompressor)__
+
+After proto message is generated from the above step, developer needs to register that proto message to codec LegacyAmino and InterfaceRegistry. All registration is in file x/module/types/codec.go
+
+* __InterfaceRegistry__ is used by Protobuf codec to handle interfaces that are encoded and decoded (we also say "unpacked") using google.protobuf.Any
+* __LegacyAmino__ is old codec but is still used for backwards-compatibility
+
+## InterfaceRegistry register
+
+* Proto msg structure needs to implement "github.com/cosmos/cosmos-sdk/types.Msg" interface compliant to "github.com/cosmos/cosmos-sdk/codec/types.InterfaceRegistry.RegisterImplementations()"
+
+```
+Msg interface {
+	proto.Message
+
+	// ValidateBasic does a simple validation check that
+	// doesn't require access to any other information.
+	ValidateBasic() error
+
+	// Signers returns the addrs of signers that must sign.
+	// CONTRACT: All signatures must be present to be valid.
+	// CONTRACT: Returns addrs in some deterministic order.
+	GetSigners() []AccAddress
+}
+```
+
+To do so, you will have to write implementation for proto Msg (for example MsgClaimFor) to comply to "github.com/cosmos/cosmos-sdk/types.Msg"
+
+```
+func (msg *MsgClaimFor) ValidateBasic() error {
+	_, err := sdk.AccAddressFromBech32(msg.Sender)
+	if err != nil {
+		return sdkerrors.Wrapf(sdkerrors.ErrInvalidAddress, "invalid sender address (%s)", err)
+	}
+	return nil
+}
+
+func (msg *MsgClaimFor) GetSigners() []sdk.AccAddress {
+	sender, err := sdk.AccAddressFromBech32(msg.Sender)
+	if err != nil {
+		panic(err)
+	}
+	return []sdk.AccAddress{sender}
+}
+```
+
+* Register: 
+	* proto Msg to InterfaceRegistry for codec 
+	* proto Msg service for handling messages
+
+```
+func RegisterInterfaces(registry cdctypes.InterfaceRegistry) {
+	// register proto Msg structure to InterfaceRegistry
+	registry.RegisterImplementations((*sdk.Msg)(nil),
+		&MsgInitialClaim{},
+		&MsgClaimFor{},
+	)
+	
+	// register Msg service
+	msgservice.RegisterMsgServiceDesc(registry, &_Msg_serviceDesc)
+}
+```
+
+## LegacyAmino
+
+```
+func RegisterCodec(cdc *codec.LegacyAmino) {
+	cdc.RegisterConcrete(&MsgInitialClaim{}, "claim/InitialClaim", nil)
+	cdc.RegisterConcrete(&MsgClaimFor{}, "claim/ClaimFor", nil)
+}
+```
+
+4. __Third thing to build: function logic in keeper package__
 
 keeper package will store all module logic. 
 
@@ -133,7 +205,7 @@ if err != nil {
 }
 ```
 
-4. __Third thing to remember: Event Emitter__
+5. __Fourth thing to remember: Event Emitter__
 
 For every final actions (send coins, mint coins, burn coins, claim rewards, ...), an event should be emitted so that client subscribed through WebSocket can catch these events realtime.
 
@@ -148,4 +220,28 @@ ctx.EventManager().EmitEvents(sdk.Events{
 })
 ```
 
+6. __Fifth thing to remember: client/cli__
 
+7. __Optional: Hooks__
+
+Here is how hook works:
+
+Module A will hook to module B: 
+
+```
+// 1. define hook function on module A in x/moduleA/keeper
+funcHook()
+
+// 2. register module A to module B hooks in app.go:
+app.StakingKeeper = *stakingKeeper.SetHooks(
+	stakingtypes.NewMultiStakingHooks(app.DistrKeeper.Hooks(), app.SlashingKeeper.Hooks(), app.moduleA.Hooks()),
+)
+
+// 3. when an event funcHook on module B is fired, all registered keepers that define funcHook() will be go through:
+// * DistrKeeper.funcHook()
+// * SlashingKeeper.funcHook()
+// * moduleA.funcHook()
+
+```
+
+module A's necessary logic can be executed right after event funcHook of module B.
