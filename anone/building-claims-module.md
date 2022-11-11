@@ -222,6 +222,8 @@ ctx.EventManager().EmitEvents(sdk.Events{
 
 6. __Fifth thing to remember: client/cli__
 
+client and cli should be easy to deal with once looked at Osmosis source code
+
 7. __Optional: Hooks__
 
 Here is how hook works:
