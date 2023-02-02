@@ -1,0 +1,1 @@
+# Paxos: a solution for distributed state replication
