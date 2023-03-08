@@ -7,7 +7,7 @@ Original problem link: https://github.com/Stride-Labs/stride/pull/327
 
 1. Mounted volume on docker is owned by root which is not accessible to docker non - root user due to rights.
 2. Running as sudo (root) may lead to different directory (directories for non - root and for root can be different) which make necessary files in non - root directory inaccessible.
-3. Docker writes files to mounted volume. These files are owned by root which complicates everything (have to use sudo, …)
+3. Docker writes files to mounted volume. These files are owned by root which complicates everything
 
 I believe that whenever Docker is restricted from executing an action (copy, move, …) due to non - root. Docker will then turn to root (highest permission) to execute actions.
 
