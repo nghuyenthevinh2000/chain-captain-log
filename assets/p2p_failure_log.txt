@@ -1,0 +1,354 @@
+﻿9:06PM INF indexed block height=11800022 module=txindex
+9:06PM INF burned tokens from module account amount=208476486uluna from=burn module=x/bank
+9:06PM INF executed block height=11800023 module=state num_invalid_txs=0 num_valid_txs=2
+9:06PM INF commit synced commit=436F6D6D697449447B5B313531203136332031323320313731203135352032333520343720323530203839203135322033302032313120323131203739203531203537203230392031373520323230203138392039322032333320313638203132382032303220323236203136352031393520333320313732203136312036355D3A4234304444377D
+9:06PM INF committed state app_hash=97A37BAB9BEB2FFA59981ED3D34F3339D1AFDCBD5CE9A880CAE2A5C321ACA141 height=11800023 module=state num_txs=2
+9:06PM INF indexed block height=11800023 module=txindex
+9:06PM INF executed block height=11800024 module=state num_invalid_txs=0 num_valid_txs=0
+9:06PM INF commit synced commit=436F6D6D697449447B5B383620313720373520313735203631203930203134332032313920323720343220383320313631203231342033392032313520313831203739203236203230312032353020353420343520343020313937203137372036332031323220353220313620323031203136302037345D3A4234304444387D
+9:06PM INF committed state app_hash=56114BAF3D5A8FDB1B2A53A1D627D7B54F1AC9FA362D28C5B13F7A3410C9A04A height=11800024 module=state num_txs=0
+9:06PM INF indexed block height=11800024 module=txindex
+9:06PM INF Starting Peer service impl="Peer{MConn{18.193.6.76:54234} 9058c0b6edf7868c3d03cc2f278fc65aedf57a8a in}" module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":54234}
+9:06PM INF Starting MConnection service impl=MConn{18.193.6.76:54234} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":54234}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":54234}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":54234}
+9:06PM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":54234}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Ensure peers module=pex numDialing=0 numInPeers=34 numOutPeers=17 numToDial=3
+9:06PM INF Will dial address addr={"id":"44a1f038e9b29eb588c2c538c6d50b31919517ef","ip":"54.180.131.115","port":26656} module=pex
+9:06PM INF Will dial address addr={"id":"67b3fbe221cf329b8986cb07a0956e834e129fa0","ip":"15.165.161.14","port":26656} module=pex
+9:06PM INF Will dial address addr={"id":"12c245401dcc1896f9782f9c27cac53398bcffa3","ip":"3.239.125.121","port":26656} module=pex
+9:06PM INF Dialing peer address={"id":"44a1f038e9b29eb588c2c538c6d50b31919517ef","ip":"54.180.131.115","port":26656} module=p2p
+9:06PM INF Dialing peer address={"id":"67b3fbe221cf329b8986cb07a0956e834e129fa0","ip":"15.165.161.14","port":26656} module=p2p
+9:06PM INF Dialing peer address={"id":"12c245401dcc1896f9782f9c27cac53398bcffa3","ip":"3.239.125.121","port":26656} module=p2p
+9:06PM ERR SendTimeout module=blockchain peer=9c40a302b887a96e5a215f53af755a48e227dfa8 reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer 9c40a302b887a96e5a215f53af755a48e227dfa8: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"9c40a302b887a96e5a215f53af755a48e227dfa8","ip":"13.124.227.97","port":56326}
+9:06PM ERR Stopping peer for error err="read tcp 172.104.19.139:26656->13.124.227.97:56326: use of closed network connection" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM ERR error while stopping peer error="already stopped" module=p2p
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"9c40a302b887a96e5a215f53af755a48e227dfa8","ip":"13.124.227.97","port":56326}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR dialing failed (attempts: 2): dial tcp 3.239.125.121:26656: i/o timeout addr={"id":"12c245401dcc1896f9782f9c27cac53398bcffa3","ip":"3.239.125.121","port":26656} module=pex
+9:06PM ERR dialing failed (attempts: 2): dial tcp 54.180.131.115:26656: i/o timeout addr={"id":"44a1f038e9b29eb588c2c538c6d50b31919517ef","ip":"54.180.131.115","port":26656} module=pex
+9:06PM ERR dialing failed (attempts: 1): dial tcp 15.165.161.14:26656: i/o timeout addr={"id":"67b3fbe221cf329b8986cb07a0956e834e129fa0","ip":"15.165.161.14","port":26656} module=pex
+9:06PM INF Starting Peer service impl="Peer{MConn{13.124.227.97:56808} 9c40a302b887a96e5a215f53af755a48e227dfa8 in}" module=p2p peer={"id":"9c40a302b887a96e5a215f53af755a48e227dfa8","ip":"13.124.227.97","port":56808}
+9:06PM INF Starting MConnection service impl=MConn{13.124.227.97:56808} module=p2p peer={"id":"9c40a302b887a96e5a215f53af755a48e227dfa8","ip":"13.124.227.97","port":56808}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR Stopping peer for error err="error with peer 6750daabdf01c6d5971aa09b57c3e668e96f7daf: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=6750daabdf01c6d5971aa09b57c3e668e96f7daf reason="peer did not send us anything" timeout=15000
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"6750daabdf01c6d5971aa09b57c3e668e96f7daf","ip":"3.71.31.165","port":49310}
+9:06PM ERR Stopping peer for error err="read tcp 172.104.19.139:26656->3.71.31.165:49310: use of closed network connection" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM ERR error while stopping peer error="already stopped" module=p2p
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"6750daabdf01c6d5971aa09b57c3e668e96f7daf","ip":"3.71.31.165","port":49310}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=57dc3f8541d4cd526c66f8c3dce7764e86c45e03 reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer 57dc3f8541d4cd526c66f8c3dce7764e86c45e03: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"57dc3f8541d4cd526c66f8c3dce7764e86c45e03","ip":"54.251.170.220","port":46836}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"57dc3f8541d4cd526c66f8c3dce7764e86c45e03","ip":"54.251.170.220","port":46836}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{54.251.170.220:47078} 57dc3f8541d4cd526c66f8c3dce7764e86c45e03 in}" module=p2p peer={"id":"57dc3f8541d4cd526c66f8c3dce7764e86c45e03","ip":"54.251.170.220","port":47078}
+9:06PM INF Starting MConnection service impl=MConn{54.251.170.220:47078} module=p2p peer={"id":"57dc3f8541d4cd526c66f8c3dce7764e86c45e03","ip":"54.251.170.220","port":47078}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer 89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a","ip":"116.202.224.210","port":45228}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a","ip":"116.202.224.210","port":45228}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{116.202.224.210:45684} 89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a in}" module=p2p peer={"id":"89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a","ip":"116.202.224.210","port":45684}
+9:06PM INF Starting MConnection service impl=MConn{116.202.224.210:45684} module=p2p peer={"id":"89bcfe5bf70cfdab7e8aec502d6e7584d4161c7a","ip":"116.202.224.210","port":45684}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=823869330f6adf3c8bbeafb0d2cc148c44c42c97 reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer 823869330f6adf3c8bbeafb0d2cc148c44c42c97: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"823869330f6adf3c8bbeafb0d2cc148c44c42c97","ip":"142.132.209.151","port":50396}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"823869330f6adf3c8bbeafb0d2cc148c44c42c97","ip":"142.132.209.151","port":50396}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{142.132.209.151:50684} 823869330f6adf3c8bbeafb0d2cc148c44c42c97 in}" module=p2p peer={"id":"823869330f6adf3c8bbeafb0d2cc148c44c42c97","ip":"142.132.209.151","port":50684}
+9:06PM INF Starting MConnection service impl=MConn{142.132.209.151:50684} module=p2p peer={"id":"823869330f6adf3c8bbeafb0d2cc148c44c42c97","ip":"142.132.209.151","port":50684}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=2c6092771f13c151edcc2975ffc364df5f65086f reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer 2c6092771f13c151edcc2975ffc364df5f65086f: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"2c6092771f13c151edcc2975ffc364df5f65086f","ip":"18.193.43.66","port":50082}
+9:06PM ERR Stopping peer for error err="read tcp 172.104.19.139:26656->18.193.43.66:50082: use of closed network connection" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM ERR error while stopping peer error="already stopped" module=p2p
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"2c6092771f13c151edcc2975ffc364df5f65086f","ip":"18.193.43.66","port":50082}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{18.193.43.66:36386} 2c6092771f13c151edcc2975ffc364df5f65086f in}" module=p2p peer={"id":"2c6092771f13c151edcc2975ffc364df5f65086f","ip":"18.193.43.66","port":36386}
+9:06PM INF Starting MConnection service impl=MConn{18.193.43.66:36386} module=p2p peer={"id":"2c6092771f13c151edcc2975ffc364df5f65086f","ip":"18.193.43.66","port":36386}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":39862}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":39862}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{88.198.35.12:40056} f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa in}" module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":40056}
+9:06PM INF Starting MConnection service impl=MConn{88.198.35.12:40056} module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":40056}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM ERR SendTimeout module=blockchain peer=f39c0c20f723054e872f0db929f793388f071e9f reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer f39c0c20f723054e872f0db929f793388f071e9f: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"f39c0c20f723054e872f0db929f793388f071e9f","ip":"3.39.243.105","port":44632}
+9:06PM ERR Stopping peer for error err="read tcp 172.104.19.139:26656->3.39.243.105:44632: use of closed network connection" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"f39c0c20f723054e872f0db929f793388f071e9f","ip":"3.39.243.105","port":44632}
+9:06PM ERR error while stopping peer error="already stopped" module=p2p
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{3.39.243.105:44878} f39c0c20f723054e872f0db929f793388f071e9f in}" module=p2p peer={"id":"f39c0c20f723054e872f0db929f793388f071e9f","ip":"3.39.243.105","port":44878}
+9:06PM INF Starting MConnection service impl=MConn{3.39.243.105:44878} module=p2p peer={"id":"f39c0c20f723054e872f0db929f793388f071e9f","ip":"3.39.243.105","port":44878}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{18.193.6.76:57818} 9058c0b6edf7868c3d03cc2f278fc65aedf57a8a in}" module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":57818}
+9:06PM INF Starting MConnection service impl=MConn{18.193.6.76:57818} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":57818}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":57818}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":57818}
+9:06PM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":57818}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Ensure peers module=pex numDialing=0 numInPeers=33 numOutPeers=17 numToDial=3
+9:06PM INF Will dial address addr={"id":"6365782a62be8dc6e791678cc7be36bf2ec158c4","ip":"3.35.230.203","port":26656} module=pex
+9:06PM INF Will dial address addr={"id":"398983809c4c8de91901df7da123cf8da8d83ffe","ip":"201.231.250.254","port":26656} module=pex
+9:06PM INF Will dial address addr={"id":"c094d4bb9e38ac0b1b50a866499b47604c749e5b","ip":"74.118.139.212","port":26656} module=pex
+9:06PM INF Dialing peer address={"id":"c094d4bb9e38ac0b1b50a866499b47604c749e5b","ip":"74.118.139.212","port":26656} module=p2p
+9:06PM INF Dialing peer address={"id":"398983809c4c8de91901df7da123cf8da8d83ffe","ip":"201.231.250.254","port":26656} module=p2p
+9:06PM INF Dialing peer address={"id":"6365782a62be8dc6e791678cc7be36bf2ec158c4","ip":"3.35.230.203","port":26656} module=p2p
+9:06PM ERR dialing failed (attempts: 3): auth failure: conn.ID (efbe79e244693ae343dd8b6308bf4b708da82200) dialed ID (c094d4bb9e38ac0b1b50a866499b47604c749e5b) mismatch addr={"id":"c094d4bb9e38ac0b1b50a866499b47604c749e5b","ip":"74.118.139.212","port":26656} module=pex
+9:06PM ERR dialing failed (attempts: 4): dial tcp 3.35.230.203:26656: i/o timeout addr={"id":"6365782a62be8dc6e791678cc7be36bf2ec158c4","ip":"3.35.230.203","port":26656} module=pex
+9:06PM ERR dialing failed (attempts: 2): dial tcp 201.231.250.254:26656: i/o timeout addr={"id":"398983809c4c8de91901df7da123cf8da8d83ffe","ip":"201.231.250.254","port":26656} module=pex
+9:06PM ERR SendTimeout module=blockchain peer=f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa reason="peer did not send us anything" timeout=15000
+9:06PM ERR Stopping peer for error err="error with peer f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa: peer did not send us anything" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":40056}
+9:06PM ERR Stopping peer for error err="read tcp 172.104.19.139:26656->88.198.35.12:40056: use of closed network connection" module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":40056}
+9:06PM ERR error while stopping peer error="already stopped" module=p2p
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{88.198.35.12:40058} f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa in}" module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":40058}
+9:06PM INF Starting MConnection service impl=MConn{88.198.35.12:40058} module=p2p peer={"id":"f38d62090a2fe7b4a02a1a6f8f22661f0f7076fa","ip":"88.198.35.12","port":40058}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{3.87.127.88:59534} 08c00cd40c914387055ccde0bd3e8468ba316f40 in}" module=p2p peer={"id":"08c00cd40c914387055ccde0bd3e8468ba316f40","ip":"3.87.127.88","port":59534}
+9:06PM INF Starting MConnection service impl=MConn{3.87.127.88:59534} module=p2p peer={"id":"08c00cd40c914387055ccde0bd3e8468ba316f40","ip":"3.87.127.88","port":59534}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"08c00cd40c914387055ccde0bd3e8468ba316f40","ip":"3.87.127.88","port":59534}
+9:06PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"08c00cd40c914387055ccde0bd3e8468ba316f40","ip":"3.87.127.88","port":59534}
+9:06PM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"08c00cd40c914387055ccde0bd3e8468ba316f40","ip":"3.87.127.88","port":59534}
+9:06PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:06PM INF Starting Peer service impl="Peer{MConn{3.76.134.117:54962} 747fd6e8af09e8f59da7fa8d8aa7876714c7ec2a in}" module=p2p peer={"id":"747fd6e8af09e8f59da7fa8d8aa7876714c7ec2a","ip":"3.76.134.117","port":54962}
+9:06PM INF Starting MConnection service impl=MConn{3.76.134.117:54962} module=p2p peer={"id":"747fd6e8af09e8f59da7fa8d8aa7876714c7ec2a","ip":"3.76.134.117","port":54962}
+9:06PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:06PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:07PM INF Starting Peer service impl="Peer{MConn{95.216.4.104:50110} 1ca86167096781ad9eebb400f9c09c48266eb3e0 in}" module=p2p peer={"id":"1ca86167096781ad9eebb400f9c09c48266eb3e0","ip":"95.216.4.104","port":50110}
+9:07PM INF Starting MConnection service impl=MConn{95.216.4.104:50110} module=p2p peer={"id":"1ca86167096781ad9eebb400f9c09c48266eb3e0","ip":"95.216.4.104","port":50110}
+9:07PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:07PM INF Starting Peer service impl="Peer{MConn{18.193.6.76:48072} 9058c0b6edf7868c3d03cc2f278fc65aedf57a8a in}" module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":48072}
+9:07PM INF Starting MConnection service impl=MConn{18.193.6.76:48072} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":48072}
+9:07PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:07PM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":48072}
+9:07PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":48072}
+9:07PM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+9:07PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"9058c0b6edf7868c3d03cc2f278fc65aedf57a8a","ip":"18.193.6.76","port":48072}
+9:07PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:07PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:07PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:07PM INF Saving AddrBook to file book=/home/luna/.terra/config/addrbook.json module=p2p size=6397
+9:07PM INF Ensure peers module=pex numDialing=0 numInPeers=35 numOutPeers=17 numToDial=3
+9:07PM INF Will dial address addr={"id":"01496c32bfebd589dcea2b9341e52855a37576a0","ip":"52.212.128.13","port":26656} module=pex
+9:07PM INF Will dial address addr={"id":"11a8979efa49eb9bebc200c4d01fcdcdda0659ff","ip":"116.202.128.11","port":26656} module=pex
+9:07PM INF Will dial address addr={"id":"24b46aa1502fbb141b47fe541f9af8d7211cb34d","ip":"84.111.196.199","port":41506} module=pex
+9:07PM INF Dialing peer address={"id":"24b46aa1502fbb141b47fe541f9af8d7211cb34d","ip":"84.111.196.199","port":41506} module=p2p
+9:07PM INF Dialing peer address={"id":"01496c32bfebd589dcea2b9341e52855a37576a0","ip":"52.212.128.13","port":26656} module=p2p
+9:07PM INF Dialing peer address={"id":"11a8979efa49eb9bebc200c4d01fcdcdda0659ff","ip":"116.202.128.11","port":26656} module=p2p
+9:07PM ERR dialing failed (attempts: 2): dial tcp 52.212.128.13:26656: connect: connection refused addr={"id":"01496c32bfebd589dcea2b9341e52855a37576a0","ip":"52.212.128.13","port":26656} module=pex
+9:07PM ERR dialing failed (attempts: 3): dial tcp 84.111.196.199:41506: i/o timeout addr={"id":"24b46aa1502fbb141b47fe541f9af8d7211cb34d","ip":"84.111.196.199","port":41506} module=pex
+9:07PM ERR dialing failed (attempts: 3): dial tcp 116.202.128.11:26656: i/o timeout addr={"id":"11a8979efa49eb9bebc200c4d01fcdcdda0659ff","ip":"116.202.128.11","port":26656} module=pex
+9:07PM INF Starting Peer service impl="Peer{MConn{139.99.63.200:55496} a6aae5aa7c9c35b5bb65c314f46f0ab782addf69 in}" module=p2p peer={"id":"a6aae5aa7c9c35b5bb65c314f46f0ab782addf69","ip":"139.99.63.200","port":55496}
+9:07PM INF Starting MConnection service impl=MConn{139.99.63.200:55496} module=p2p peer={"id":"a6aae5aa7c9c35b5bb65c314f46f0ab782addf69","ip":"139.99.63.200","port":55496}
+9:07PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:07PM INF Starting Peer service impl="Peer{MConn{142.132.192.218:58838} 5ddcf91dd31eedff18ab6476517063f7b9fb2977 in}" module=p2p peer={"id":"5ddcf91dd31eedff18ab6476517063f7b9fb2977","ip":"142.132.192.218","port":58838}
+9:07PM INF Starting MConnection service impl=MConn{142.132.192.218:58838} module=p2p peer={"id":"5ddcf91dd31eedff18ab6476517063f7b9fb2977","ip":"142.132.192.218","port":58838}
+9:07PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:07PM INF Starting Peer service impl="Peer{MConn{54.153.83.153:60252} e0efbaf3e37d5c8b4c2729a6a9bf189351664bfc in}" module=p2p peer={"id":"e0efbaf3e37d5c8b4c2729a6a9bf189351664bfc","ip":"54.153.83.153","port":60252}
+9:07PM INF Starting MConnection service impl=MConn{54.153.83.153:60252} module=p2p peer={"id":"e0efbaf3e37d5c8b4c2729a6a9bf189351664bfc","ip":"54.153.83.153","port":60252}
+9:07PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:07PM INF Ensure peers module=pex numDialing=0 numInPeers=38 numOutPeers=17 numToDial=3
+9:07PM INF Will dial address addr={"id":"abdba4426e62c343695d802841c0ad6610fc9475","ip":"35.79.41.69","port":26656} module=pex
+9:07PM INF Will dial address addr={"id":"9a88884883d276a5c71f65b2bfc29eb592d41461","ip":"178.18.242.25","port":26656} module=pex
+9:07PM INF Will dial address addr={"id":"2ade170712873eeda133a41702ad8ddf81d84aae","ip":"109.236.81.221","port":26656} module=pex
+9:07PM INF Dialing peer address={"id":"2ade170712873eeda133a41702ad8ddf81d84aae","ip":"109.236.81.221","port":26656} module=p2p
+9:07PM INF Dialing peer address={"id":"9a88884883d276a5c71f65b2bfc29eb592d41461","ip":"178.18.242.25","port":26656} module=p2p
+9:07PM ERR dialing failed (attempts: 1): auth failure: conn.ID (08b1ddcac8dccd1e8e2973a56e3a4e991602ecd9) dialed ID (9a88884883d276a5c71f65b2bfc29eb592d41461) mismatch addr={"id":"9a88884883d276a5c71f65b2bfc29eb592d41461","ip":"178.18.242.25","port":26656} module=pex
+9:07PM ERR dialing failed (attempts: 3): auth failure: secret conn failed: read tcp 172.104.19.139:49524->109.236.81.221:26656: i/o timeout addr={"id":"2ade170712873eeda133a41702ad8ddf81d84aae","ip":"109.236.81.221","port":26656} module=pex
+9:07PM INF Starting Peer service impl="Peer{MConn{3.71.31.165:47416} 6750daabdf01c6d5971aa09b57c3e668e96f7daf in}" module=p2p peer={"id":"6750daabdf01c6d5971aa09b57c3e668e96f7daf","ip":"3.71.31.165","port":47416}
+9:07PM INF Starting MConnection service impl=MConn{3.71.31.165:47416} module=p2p peer={"id":"6750daabdf01c6d5971aa09b57c3e668e96f7daf","ip":"3.71.31.165","port":47416}
+9:07PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:08PM INF Starting Peer service impl="Peer{MConn{54.84.11.51:41110} e807dda3c33a9b411b1685788582a68c465607b5 in}" module=p2p peer={"id":"e807dda3c33a9b411b1685788582a68c465607b5","ip":"54.84.11.51","port":41110}
+9:08PM INF Starting MConnection service impl=MConn{54.84.11.51:41110} module=p2p peer={"id":"e807dda3c33a9b411b1685788582a68c465607b5","ip":"54.84.11.51","port":41110}
+9:08PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:08PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:08PM INF Will dial address addr={"id":"cd91f5c9003d7ffe2c88b7a8b1abe811417e607a","ip":"65.108.97.229","port":27656} module=pex
+9:08PM INF Will dial address addr={"id":"58ad0c37bb27fdf7bc3a017c3ef36277c8da0f67","ip":"3.71.14.190","port":26656} module=pex
+9:08PM INF Will dial address addr={"id":"62bac9683b1843e2a395781f2b01ec742dfdaf1a","ip":"149.248.12.225","port":26656} module=pex
+9:08PM INF Dialing peer address={"id":"62bac9683b1843e2a395781f2b01ec742dfdaf1a","ip":"149.248.12.225","port":26656} module=p2p
+9:08PM INF Dialing peer address={"id":"cd91f5c9003d7ffe2c88b7a8b1abe811417e607a","ip":"65.108.97.229","port":27656} module=p2p
+9:08PM INF Dialing peer address={"id":"58ad0c37bb27fdf7bc3a017c3ef36277c8da0f67","ip":"3.71.14.190","port":26656} module=p2p
+9:08PM ERR dialing failed (attempts: 2): auth failure: conn.ID (164fc89fbf24f21a7f4eca7a279dab8fa1b94c44) dialed ID (cd91f5c9003d7ffe2c88b7a8b1abe811417e607a) mismatch addr={"id":"cd91f5c9003d7ffe2c88b7a8b1abe811417e607a","ip":"65.108.97.229","port":27656} module=pex
+9:08PM ERR dialing failed (attempts: 2): dial tcp 149.248.12.225:26656: i/o timeout addr={"id":"62bac9683b1843e2a395781f2b01ec742dfdaf1a","ip":"149.248.12.225","port":26656} module=pex
+9:08PM ERR dialing failed (attempts: 6): dial tcp 3.71.14.190:26656: i/o timeout addr={"id":"58ad0c37bb27fdf7bc3a017c3ef36277c8da0f67","ip":"3.71.14.190","port":26656} module=pex
+9:08PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:08PM INF Will dial address addr={"id":"ff3c542d5bf13e8ef1733e9415d125ede9f9eeed","ip":"172.105.20.51","port":26656} module=pex
+9:08PM INF Will dial address addr={"id":"a6ad6a56aca36cda9d6c4641f1154006cfad93eb","ip":"188.34.155.5","port":26656} module=pex
+9:08PM INF Will dial address addr={"id":"41b89a21c655b6a46cce0f5b3620bf616a24b845","ip":"52.73.168.104","port":26656} module=pex
+9:08PM INF Dialing peer address={"id":"41b89a21c655b6a46cce0f5b3620bf616a24b845","ip":"52.73.168.104","port":26656} module=p2p
+9:08PM INF Dialing peer address={"id":"ff3c542d5bf13e8ef1733e9415d125ede9f9eeed","ip":"172.105.20.51","port":26656} module=p2p
+9:08PM INF Dialing peer address={"id":"a6ad6a56aca36cda9d6c4641f1154006cfad93eb","ip":"188.34.155.5","port":26656} module=p2p
+9:08PM ERR dialing failed (attempts: 2): dial tcp 172.105.20.51:26656: connect: no route to host addr={"id":"ff3c542d5bf13e8ef1733e9415d125ede9f9eeed","ip":"172.105.20.51","port":26656} module=pex
+9:08PM ERR dialing failed (attempts: 8): dial tcp 52.73.168.104:26656: i/o timeout addr={"id":"41b89a21c655b6a46cce0f5b3620bf616a24b845","ip":"52.73.168.104","port":26656} module=pex
+9:08PM ERR dialing failed (attempts: 2): dial tcp 188.34.155.5:26656: i/o timeout addr={"id":"a6ad6a56aca36cda9d6c4641f1154006cfad93eb","ip":"188.34.155.5","port":26656} module=pex
+9:09PM ERR Connection failed @ sendRoutine conn={"Logger":{}} err="pong timeout" module=p2p peer={"id":"1ca86167096781ad9eebb400f9c09c48266eb3e0","ip":"95.216.4.104","port":50110}
+9:09PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"1ca86167096781ad9eebb400f9c09c48266eb3e0","ip":"95.216.4.104","port":50110}
+9:09PM ERR Stopping peer for error err="pong timeout" module=p2p peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"1ca86167096781ad9eebb400f9c09c48266eb3e0","ip":"95.216.4.104","port":50110}
+9:09PM INF Inbound Peer rejected err="auth failure: secret conn failed: EOF" module=p2p numPeers=57
+9:09PM INF Inbound Peer rejected err="auth failure: secret conn failed: EOF" module=p2p numPeers=56
+9:09PM INF Inbound Peer rejected err="auth failure: secret conn failed: EOF" module=p2p numPeers=56
+9:09PM INF Inbound Peer rejected err="auth failure: secret conn failed: EOF" module=p2p numPeers=56
+9:09PM INF Inbound Peer rejected err="auth failure: secret conn failed: EOF" module=p2p numPeers=56
+9:09PM INF Inbound Peer rejected err="auth failure: secret conn failed: EOF" module=p2p numPeers=56
+9:09PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:09PM INF Saving AddrBook to file book=/home/luna/.terra/config/addrbook.json module=p2p size=6397
+9:09PM INF Ensure peers module=pex numDialing=0 numInPeers=39 numOutPeers=17 numToDial=3
+9:09PM INF Will dial address addr={"id":"dac46a7cecf4dfdb92c36ec54527d96045b21073","ip":"3.71.201.113","port":26656} module=pex
+9:09PM INF Will dial address addr={"id":"acd02e0b9d7b8d389c8347cd280ab9242a9da638","ip":"162.55.96.162","port":26656} module=pex
+9:09PM INF Will dial address addr={"id":"0ff2795da9277fc8b76da6cd7477a1fb38a3d4a4","ip":"100.24.120.8","port":26656} module=pex
+9:09PM INF Dialing peer address={"id":"0ff2795da9277fc8b76da6cd7477a1fb38a3d4a4","ip":"100.24.120.8","port":26656} module=p2p
+9:09PM INF Dialing peer address={"id":"dac46a7cecf4dfdb92c36ec54527d96045b21073","ip":"3.71.201.113","port":26656} module=p2p
+9:09PM INF Dialing peer address={"id":"acd02e0b9d7b8d389c8347cd280ab9242a9da638","ip":"162.55.96.162","port":26656} module=p2p
+9:09PM ERR dialing failed (attempts: 3): incompatible: peer is on a different network. Got phoenix-1, expected columbus-5 addr={"id":"acd02e0b9d7b8d389c8347cd280ab9242a9da638","ip":"162.55.96.162","port":26656} module=pex
+9:09PM ERR dialing failed (attempts: 2): dial tcp 100.24.120.8:26656: i/o timeout addr={"id":"0ff2795da9277fc8b76da6cd7477a1fb38a3d4a4","ip":"100.24.120.8","port":26656} module=pex
+9:09PM ERR dialing failed (attempts: 8): dial tcp 3.71.201.113:26656: i/o timeout addr={"id":"dac46a7cecf4dfdb92c36ec54527d96045b21073","ip":"3.71.201.113","port":26656} module=pex
+9:09PM INF Starting Peer service impl="Peer{MConn{3.123.43.126:34130} 171af9d174c5ae9906da4f7b286f586bccb5295a in}" module=p2p peer={"id":"171af9d174c5ae9906da4f7b286f586bccb5295a","ip":"3.123.43.126","port":34130}
+9:09PM INF Starting MConnection service impl=MConn{3.123.43.126:34130} module=p2p peer={"id":"171af9d174c5ae9906da4f7b286f586bccb5295a","ip":"3.123.43.126","port":34130}
+9:09PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"171af9d174c5ae9906da4f7b286f586bccb5295a","ip":"3.123.43.126","port":34130}
+9:09PM ERR Stopping peer for error err="read tcp 172.104.19.139:26656->3.123.43.126:34130: read: connection reset by peer" module=p2p peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"171af9d174c5ae9906da4f7b286f586bccb5295a","ip":"3.123.43.126","port":34130}
+9:09PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:09PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:09PM INF Ensure peers module=pex numDialing=0 numInPeers=39 numOutPeers=17 numToDial=3
+9:09PM INF Will dial address addr={"id":"560fe0ede6ced1afe38c97fb1ed261fb50be5494","ip":"34.72.146.233","port":26556} module=pex
+9:09PM INF Will dial address addr={"id":"f142e3543a216a5b202a9d38a0139b31af1f6baf","ip":"3.71.110.87","port":26656} module=pex
+9:09PM INF Will dial address addr={"id":"3b8fd27454b5dfe2e587f52050706d284a8e3839","ip":"13.59.218.105","port":26656} module=pex
+9:09PM INF Dialing peer address={"id":"3b8fd27454b5dfe2e587f52050706d284a8e3839","ip":"13.59.218.105","port":26656} module=p2p
+9:09PM INF Dialing peer address={"id":"560fe0ede6ced1afe38c97fb1ed261fb50be5494","ip":"34.72.146.233","port":26556} module=p2p
+9:09PM INF Dialing peer address={"id":"f142e3543a216a5b202a9d38a0139b31af1f6baf","ip":"3.71.110.87","port":26656} module=p2p
+9:09PM ERR dialing failed (attempts: 2): dial tcp 13.59.218.105:26656: i/o timeout addr={"id":"3b8fd27454b5dfe2e587f52050706d284a8e3839","ip":"13.59.218.105","port":26656} module=pex
+9:09PM ERR dialing failed (attempts: 7): dial tcp 3.71.110.87:26656: i/o timeout addr={"id":"f142e3543a216a5b202a9d38a0139b31af1f6baf","ip":"3.71.110.87","port":26656} module=pex
+9:09PM ERR dialing failed (attempts: 1): dial tcp 34.72.146.233:26556: i/o timeout addr={"id":"560fe0ede6ced1afe38c97fb1ed261fb50be5494","ip":"34.72.146.233","port":26556} module=pex
+9:10PM INF Starting Peer service impl="Peer{MConn{13.213.4.117:34718} a5b36b2a154779146249e9536b26dd2823f8fa90 in}" module=p2p peer={"id":"a5b36b2a154779146249e9536b26dd2823f8fa90","ip":"13.213.4.117","port":34718}
+9:10PM INF Starting MConnection service impl=MConn{13.213.4.117:34718} module=p2p peer={"id":"a5b36b2a154779146249e9536b26dd2823f8fa90","ip":"13.213.4.117","port":34718}
+9:10PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:10PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:10PM INF Will dial address addr={"id":"cfffa61ee6b7764d926c1f4637af8784c07f6612","ip":"3.214.162.229","port":26656} module=pex
+9:10PM INF Will dial address addr={"id":"3d5c8a502b1629385ffd26efba88cf6412dcf889","ip":"100.26.100.173","port":26656} module=pex
+9:10PM INF Will dial address addr={"id":"224d5c68456043627a21a874ab0d09bea0728d8f","ip":"35.227.98.170","port":26656} module=pex
+9:10PM INF Dialing peer address={"id":"224d5c68456043627a21a874ab0d09bea0728d8f","ip":"35.227.98.170","port":26656} module=p2p
+9:10PM INF Dialing peer address={"id":"3d5c8a502b1629385ffd26efba88cf6412dcf889","ip":"100.26.100.173","port":26656} module=p2p
+9:10PM INF Dialing peer address={"id":"cfffa61ee6b7764d926c1f4637af8784c07f6612","ip":"3.214.162.229","port":26656} module=p2p
+9:10PM ERR dialing failed (attempts: 1): dial tcp 35.227.98.170:26656: i/o timeout addr={"id":"224d5c68456043627a21a874ab0d09bea0728d8f","ip":"35.227.98.170","port":26656} module=pex
+9:10PM ERR dialing failed (attempts: 4): dial tcp 3.214.162.229:26656: i/o timeout addr={"id":"cfffa61ee6b7764d926c1f4637af8784c07f6612","ip":"3.214.162.229","port":26656} module=pex
+9:10PM ERR dialing failed (attempts: 1): dial tcp 100.26.100.173:26656: i/o timeout addr={"id":"3d5c8a502b1629385ffd26efba88cf6412dcf889","ip":"100.26.100.173","port":26656} module=pex
+9:10PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:10PM INF Will dial address addr={"id":"996f010b2e314a6b3665155a3eccf45968b687de","ip":"95.168.165.203","port":26656} module=pex
+9:10PM INF Will dial address addr={"id":"b95f128cbc8edd9b76d66bebbd3a70301e1ffb5e","ip":"68.183.230.51","port":26656} module=pex
+9:10PM INF Will dial address addr={"id":"cd1bb936d6f919be34ed79ea244a792d66aaf620","ip":"3.143.234.220","port":26656} module=pex
+9:10PM INF Dialing peer address={"id":"cd1bb936d6f919be34ed79ea244a792d66aaf620","ip":"3.143.234.220","port":26656} module=p2p
+9:10PM INF Dialing peer address={"id":"996f010b2e314a6b3665155a3eccf45968b687de","ip":"95.168.165.203","port":26656} module=p2p
+9:10PM INF Dialing peer address={"id":"b95f128cbc8edd9b76d66bebbd3a70301e1ffb5e","ip":"68.183.230.51","port":26656} module=p2p
+9:10PM ERR dialing failed (attempts: 2): dial tcp 68.183.230.51:26656: connect: connection refused addr={"id":"b95f128cbc8edd9b76d66bebbd3a70301e1ffb5e","ip":"68.183.230.51","port":26656} module=pex
+9:10PM ERR dialing failed (attempts: 3): dial tcp 3.143.234.220:26656: i/o timeout addr={"id":"cd1bb936d6f919be34ed79ea244a792d66aaf620","ip":"3.143.234.220","port":26656} module=pex
+9:10PM ERR dialing failed (attempts: 1): dial tcp 95.168.165.203:26656: i/o timeout addr={"id":"996f010b2e314a6b3665155a3eccf45968b687de","ip":"95.168.165.203","port":26656} module=pex
+9:11PM INF Saving AddrBook to file book=/home/luna/.terra/config/addrbook.json module=p2p size=6397
+9:11PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:11PM INF Will dial address addr={"id":"33c0e097e92de3a14008f779f9692ff41e3dee79","ip":"18.221.186.137","port":26656} module=pex
+9:11PM INF Will dial address addr={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656} module=pex
+9:11PM INF Will dial address addr={"id":"d764353eeaa403220549b6ac2936094c96bbfd05","ip":"54.224.22.25","port":26656} module=pex
+9:11PM INF Dialing peer address={"id":"d764353eeaa403220549b6ac2936094c96bbfd05","ip":"54.224.22.25","port":26656} module=p2p
+9:11PM INF Dialing peer address={"id":"33c0e097e92de3a14008f779f9692ff41e3dee79","ip":"18.221.186.137","port":26656} module=p2p
+9:11PM INF Dialing peer address={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656} module=p2p
+9:11PM INF Starting Peer service impl="Peer{MConn{88.198.129.21:26656} 471518432477e31ea348af246c0b54095d41352c out}" module=p2p peer={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656}
+9:11PM INF Starting MConnection service impl=MConn{88.198.129.21:26656} module=p2p peer={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656}
+9:11PM INF Added peer module=p2p peer={"Data":{},"Logger":{}}
+9:11PM INF Connection is closed @ recvRoutine (likely by the other side) conn={"Logger":{}} module=p2p peer={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656}
+9:11PM INF Stopping MConnection service impl={"Logger":{}} module=p2p peer={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656}
+9:11PM ERR Stopping peer for error err=EOF module=p2p peer={"Data":{},"Logger":{}}
+9:11PM INF Stopping Peer service impl={"Data":{},"Logger":{}} module=p2p peer={"id":"471518432477e31ea348af246c0b54095d41352c","ip":"88.198.129.21","port":26656}
+9:11PM INF Stopping gossipVotesRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:11PM INF Stopping gossipDataRoutine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:11PM ERR dialing failed (attempts: 2): dial tcp 54.224.22.25:26656: i/o timeout addr={"id":"d764353eeaa403220549b6ac2936094c96bbfd05","ip":"54.224.22.25","port":26656} module=pex
+9:11PM ERR dialing failed (attempts: 3): dial tcp 18.221.186.137:26656: i/o timeout addr={"id":"33c0e097e92de3a14008f779f9692ff41e3dee79","ip":"18.221.186.137","port":26656} module=pex
+9:11PM INF Stopping queryMaj23Routine for peer module=consensus peer={"Data":{},"Logger":{}}
+9:11PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:11PM INF Will dial address addr={"id":"af98d07c5f97163c79502d162a75b4725cb312ab","ip":"13.38.57.171","port":26656} module=pex
+9:11PM INF Will dial address addr={"id":"168b95449615368913b65ccf82ccdeb77c03b3a5","ip":"65.108.142.81","port":26661} module=pex
+9:11PM INF Will dial address addr={"id":"80a15ed321aabf0066b733e621b7c71c183d0c11","ip":"65.21.72.115","port":54878} module=pex
+9:11PM INF Dialing peer address={"id":"80a15ed321aabf0066b733e621b7c71c183d0c11","ip":"65.21.72.115","port":54878} module=p2p
+9:11PM INF Dialing peer address={"id":"af98d07c5f97163c79502d162a75b4725cb312ab","ip":"13.38.57.171","port":26656} module=p2p
+9:11PM INF Dialing peer address={"id":"168b95449615368913b65ccf82ccdeb77c03b3a5","ip":"65.108.142.81","port":26661} module=p2p
+9:11PM ERR dialing failed (attempts: 2): dial tcp 65.21.72.115:54878: connect: connection refused addr={"id":"80a15ed321aabf0066b733e621b7c71c183d0c11","ip":"65.21.72.115","port":54878} module=pex
+9:11PM ERR dialing failed (attempts: 7): incompatible: peer is on a different network. Got phoenix-1, expected columbus-5 addr={"id":"168b95449615368913b65ccf82ccdeb77c03b3a5","ip":"65.108.142.81","port":26661} module=pex
+9:11PM ERR dialing failed (attempts: 6): dial tcp 13.38.57.171:26656: i/o timeout addr={"id":"af98d07c5f97163c79502d162a75b4725cb312ab","ip":"13.38.57.171","port":26656} module=pex
+9:12PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:12PM INF Will dial address addr={"id":"a6795130582100cf9168627fa63987cc3e37bf5b","ip":"52.213.13.159","port":31106} module=pex
+9:12PM INF Will dial address addr={"id":"72baf359e06aa38b8df26bc9a55ab92746044e81","ip":"34.245.145.137","port":26656} module=pex
+9:12PM INF Will dial address addr={"id":"487815824b4878e9a57511b3092803790cd43569","ip":"65.108.128.240","port":26656} module=pex
+9:12PM INF Dialing peer address={"id":"487815824b4878e9a57511b3092803790cd43569","ip":"65.108.128.240","port":26656} module=p2p
+9:12PM INF Dialing peer address={"id":"a6795130582100cf9168627fa63987cc3e37bf5b","ip":"52.213.13.159","port":31106} module=p2p
+9:12PM INF Dialing peer address={"id":"72baf359e06aa38b8df26bc9a55ab92746044e81","ip":"34.245.145.137","port":26656} module=p2p
+9:12PM ERR dialing failed (attempts: 3): dial tcp 65.108.128.240:26656: i/o timeout addr={"id":"487815824b4878e9a57511b3092803790cd43569","ip":"65.108.128.240","port":26656} module=pex
+9:12PM ERR dialing failed (attempts: 4): dial tcp 52.213.13.159:31106: i/o timeout addr={"id":"a6795130582100cf9168627fa63987cc3e37bf5b","ip":"52.213.13.159","port":31106} module=pex
+9:12PM ERR dialing failed (attempts: 2): dial tcp 34.245.145.137:26656: i/o timeout addr={"id":"72baf359e06aa38b8df26bc9a55ab92746044e81","ip":"34.245.145.137","port":26656} module=pex
+9:12PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:12PM INF Will dial address addr={"id":"7995ddf61ff637445265ea4067eef3ee3e079842","ip":"54.184.24.88","port":26656} module=pex
+9:12PM INF Will dial address addr={"id":"39cba371144b1770f864f8856d2f69d7b02db319","ip":"13.209.3.168","port":26656} module=pex
+9:12PM INF Will dial address addr={"id":"ad559e8e448d35ed7fd3176c21065f644051aa81","ip":"3.35.232.114","port":26656} module=pex
+9:12PM INF Dialing peer address={"id":"39cba371144b1770f864f8856d2f69d7b02db319","ip":"13.209.3.168","port":26656} module=p2p
+9:12PM INF Dialing peer address={"id":"7995ddf61ff637445265ea4067eef3ee3e079842","ip":"54.184.24.88","port":26656} module=p2p
+9:12PM INF Dialing peer address={"id":"ad559e8e448d35ed7fd3176c21065f644051aa81","ip":"3.35.232.114","port":26656} module=p2p
+9:12PM ERR dialing failed (attempts: 12): dial tcp 13.209.3.168:26656: i/o timeout addr={"id":"39cba371144b1770f864f8856d2f69d7b02db319","ip":"13.209.3.168","port":26656} module=pex
+9:12PM ERR dialing failed (attempts: 6): dial tcp 54.184.24.88:26656: i/o timeout addr={"id":"7995ddf61ff637445265ea4067eef3ee3e079842","ip":"54.184.24.88","port":26656} module=pex
+9:12PM ERR dialing failed (attempts: 3): dial tcp 3.35.232.114:26656: i/o timeout addr={"id":"ad559e8e448d35ed7fd3176c21065f644051aa81","ip":"3.35.232.114","port":26656} module=pex
+9:13PM INF Saving AddrBook to file book=/home/luna/.terra/config/addrbook.json module=p2p size=6397
+9:13PM INF Ensure peers module=pex numDialing=0 numInPeers=40 numOutPeers=17 numToDial=3
+9:13PM INF Will dial address addr={"id":"2405f19baf57420dd996ec55b101e1599e8b6fe0","ip":"15.165.74.73","port":26656} module=pex
+9:13PM INF Will dial address addr={"id":"5227934780905f99fe01b2cd417ff842c96730d5","ip":"35.83.23.119","port":26656} module=pex
+9:13PM INF Will dial address addr={"id":"0bfc46f349262b44774d7637d503650eceacd74e","ip":"3.137.170.194","port":26656} module=pex
+9:13PM INF Dialing peer address={"id":"2405f19baf57420dd996ec55b101e1599e8b6fe0","ip":"15.165.74.73","port":26656} module=p2p
+9:13PM INF Dialing peer address={"id":"0bfc46f349262b44774d7637d503650eceacd74e","ip":"3.137.170.194","port":26656} module=p2p
+9:13PM INF Dialing peer address={"id":"5227934780905f99fe01b2cd417ff842c96730d5","ip":"35.83.23.119","port":26656} module=p2p
+9:13PM ERR dialing failed (attempts: 3): dial tcp 3.137.170.194:26656: i/o timeout addr={"id":"0bfc46f349262b44774d7637d503650eceacd74e","ip":"3.137.170.194","port":26656} module=pex
+9:13PM ERR dialing failed (attempts: 2): dial tcp 15.165.74.73:26656: i/o timeout addr={"id":"2405f19baf57420dd996ec55b101e1599e8b6fe0","ip":"15.165.74.73","port":26656} module=pex
+9:13PM ERR dialing failed (attempts: 5): dial tcp 35.83.23.119:26656: i/o timeout addr={"id":"5227934780905f99fe01b2cd417ff842c96730d5","ip":"35.83.23.119","port":26656} module=pex
