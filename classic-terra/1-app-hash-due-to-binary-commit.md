@@ -1,4 +1,4 @@
-# App hash due to binary version
+# App hash due to binary commit
 
 On 2 May, there is a report of a problem that is causing app hash error when applying a CosmWasm patch on mainnet columbus - 5.
 
