@@ -62,4 +62,4 @@ To trace why it has led to the problem, I must first understand what is the erro
 
     Consistent commit version: Everytime a commit is made, terrad is built with that commit identification. By releasing v1.1.0-cherry, I have accidentally created a terrad binary with different commit identification. The fix is to use the same v1.1.0, apply replacement and rebuild. This way doesn't create a different binary commit. The patch becomes consistent and reproducible.
 
-As the writing of this, the cherry patch has been applied to biggest validators on Terra Classic chain. Another day not worrying about chain halt exploit.
+As the writing of this, the cherry patch has been applied to biggest validators on Terra Classic chain. Another day not worrying about chain halt exploit. [cherry patch guide on Terra Classic](https://github.com/classic-terra/documents/blob/main/guides/cherry-patch.md)
