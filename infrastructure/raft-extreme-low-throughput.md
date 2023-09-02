@@ -1,5 +1,7 @@
 # RAFT consensus extremely low throughput
 
+[problem source](https://github.com/nghuyenthevinh2000/distributed-training)
+
 1. Slow elected leader: during my build of Raft consensus engine, I struggle with timing and synchronization. Due to locking mechanism, there can only be one operation in a time box. Other cannot join in. The more occurrence rate of an operation, the more chance for it to show up. In this sense, the higher client request rate, the smaller chance of a successful election. This is because the server reacts instantly to client request, the more of them, the more occurrence. Due to this, election operation has to wait for a very long time to get the chance to access resource. Additionally, they also need to collect votes from peers in a timely manner for a successful election. I need to localize resource locking and separate concerns
 
 2. Log is synced, but no successful read (due to time - out): I am thinking maybe this is about wrong timing of read. But, would need to analyze more.
