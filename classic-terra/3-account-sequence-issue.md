@@ -56,7 +56,7 @@ Another EditValidator tx is broadcasted going through two stage CheckTx and Deli
 5. B: 0 (DeliverTx)
 6. C: 0 (DeliverTx)
 
-Continuing like so, Ante Handler will keep returning account sequence mismatch in DeliverTx stage. Failed messages are included in block, taking up spaces of other valid messages.
+Continuing like so, Ante Handler will keep returning account sequence mismatch in DeliverTx stage. Failed messages are included in block, taking up spaces of other valid messages. Now, you see how account sequence mismatch happened. DeliverTx state and CheckTx state is supposed to be the same, if this continues, I am afraid that one day an app hash error will happen when a logic queries accSeq state.
 
 The solution to this is like so:
 1. First fix the ordering of Dyncomm Decorator to be before SigVerification and IncrementSequence decorator
