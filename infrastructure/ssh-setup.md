@@ -18,6 +18,10 @@ In the context of systemd, "activated by socket" refers to a unit that is starte
 
 When a socket is opened, systemd can automatically start a corresponding service or other unit that is configured to be activated by that socket. This can be useful for starting a service only when it is actually needed, rather than having it run constantly in the background.
 
+```
+sudo systemctl list-sockets
+```
+
 2. [Allow port 22 on LAN only. Allow port 2222 on WAN only](https://www.techrepublic.com/article/how-to-allow-ssh-connections-from-lan-and-wan-on-different-ports/)
    
 3. [Setup no password for ssh](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
